@@ -1,0 +1,197 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.header-area{
+    background-color: #3C6255;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 15%;
+}
+
+.logo-img{
+    width: 100%;
+}
+
+.login,.search{
+    padding-top:5%;
+}
+
+.login:hover{
+    color: white;
+    opacity: 0.8;
+    cursor:default;
+}
+
+.fa-brands{
+    text-align:center;
+    padding-top:6%;
+}
+
+.fa-brands:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+
+.wrapper{
+    padding: 5%;
+}
+
+.category{
+    margin-top:5%;
+}
+
+.category h2{
+    text-align: center;
+}
+
+.nav{
+    margin:3% 0;
+    display: flex;
+}
+
+.nav a{
+    color:#3C6255;
+}
+
+.nav a:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.category{
+    background-color: #EAE7B1;
+    padding:3% 0;
+}
+
+
+
+.topics{
+    border:5px dotted #3C6255;
+    margin-top:10%;
+    padding: 5%;
+}
+
+.topics h2{
+    padding-bottom: 3%;
+}
+
+.topics-content{
+    margin-bottom:2%;
+}
+
+.tab{
+    background-color: #61876E;
+    color: #EAE7B1;
+    margin-top:10%;
+}
+
+.next-page{
+    margin-top:10%;
+}
+
+.next-page p{
+    text-align: center;
+}
+
+.next-page div{
+    padding: 1% 2%;
+    text-align: right;
+}
+
+.next-page div>a{
+    color: #EAE7B1;
+    background-color: #61876E;
+    padding: 1% 2%;
+}
+
+.next-page a:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+footer{
+    background-color: #3C6255;
+    margin-top:10%;
+    padding: 5% 0;
+}
+
+footer p{
+    text-align: center;
+    color: #EAE7B1;
+}
+
+.home{
+    color: #EAE7B1;
+
+}
+
+
+/* スクロールトップの設定 */
+
+#page-top{
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    z-index:2;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+#page-top a{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#A6BB8D;
+    border-radius: 50%;
+    width:60px;
+    height: 60px;
+    color:#fff6f4;
+    text-align: center;
+    padding-left:1%;
+    padding-right: 1%;
+}
+
+@keyframes UpAnime {
+    from{
+        opacity:0 ;
+        transform:translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.up-move{
+    animation:UpAnime 0.5s forwards;
+}
+
+
+@keyframes DownAnime {
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+
+.down-move{
+    animation:DownAnime 0.5s forwards;
+}
